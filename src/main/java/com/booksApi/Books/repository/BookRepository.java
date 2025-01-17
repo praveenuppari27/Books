@@ -1,9 +1,10 @@
 package com.booksApi.Books.repository;
 
-public class BookRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
 
-	public BookRepository() {
-		// TODO Auto-generated constructor stub
-	}
+import com.booksApi.Books.entity.Book;
+
+public interface BookRepository extends JpaRepository<Book , Long> {
+
 
 }
